@@ -38,7 +38,7 @@ town_names(real_names) {
 	text("Parkalombolo", 5),
 	text("Kengis", 5),
 	text("Sattajärvi", 5),
-	text("Svanstein", 5),
+	text("Turtola", 5),
 	text("Aapua", 5),
 	text("Jarhois", 5),
 	text("Kardis", 5),
@@ -56,6 +56,8 @@ town_names(real_names) {
 	text("Erkheikki", 5),
 	text("Aareavaara", 5),
 	text("Kaunisvaara", 5),
+	text("Hietaniemi", 5),
+	text("Saikosjärvi", 5),
 	}
 }
 
