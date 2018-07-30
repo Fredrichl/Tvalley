@@ -1,0 +1,147 @@
+//
+// Version 0.51
+// Release date:	
+// 
+
+// Editing by:		Fredrich Legnemark
+//
+
+grf {
+ grfid: "FL\01\01";
+ name: string(STR_GRF_NAME);
+ desc: string(STR_GRF_DESC);
+ url: string(STR_GRF_URL);
+ version: 0;
+ min_compatible_version: 0;
+}
+
+// Meänmaa/Tornionlaakso town names
+
+town_names(real_names) {
+	styles: string(STR_TOWN_NAME_REAL);
+	{
+	text("Pajala", 5),
+	text("Tärendö", 5),
+	text("Korpilombolo", 5),
+	text("Övertorneå", 5),
+	text("Matarenki", 5),
+	text("Tärendö", 5),
+	text("Junosuando", 5),
+	text("Jukkasjärvi", 5),
+	text("Pello", 5),
+	text("Kolari", 5),
+	text("Narkaus", 5),
+	text("Haaparanta", 5),
+	text("Saittarova", 5),
+	text("Kangos", 5),
+	text("Lovikka", 5),
+	text("Parkalombolo", 5),
+	text("Kengis", 5),
+	text("Sattajärvi", 5),
+	text("Svanstein", 5),
+	text("Aapua", 5),
+	text("Jarhois", 5),
+	text("Kardis", 5),
+	text("Juoksengi", 5),
+	text("Kuivakangas", 5),
+	text("Karungi", 5),
+	text("Kukkola", 5),
+	text("Korpikylä", 5),
+	text("Nikkala", 5),
+	text("Säivis", 5),
+	text("Sangis", 5),
+	text("Muonio", 5),
+	text("Vojakkala", 5),
+	text("Tornio", 5),
+	text("Erkheikki", 5),
+	text("Aareavaara", 5),
+	text("Kaunisvaara", 5),
+	}
+}
+
+
+town_names(one) {
+	{
+	 	text("Ruoko", 10),
+	 	text("Teura", 10),
+		text("Kaunis", 10),
+		text("Aarea", 10),
+		text("Saikos", 10),
+		text("Iso", 10),
+		text("Hukan", 10),
+		text("Jieri", 10),
+		text("Kangos", 10),
+		text("Kitkiö", 10),
+		text("Lahden", 10),
+		text("Lauta", 10),
+		text("Pissi", 10),
+		text("Ohtana", 10),
+		text("Saitta", 10),
+		text("Törmäs", 10),
+		text("Haapa", 10),
+		text("Hirvi", 10),
+		text("Jänkis", 10),
+		text("Kuura", 10),
+		text("Mettä", 10),
+		text("Soukolo", 10),
+		text("Armas", 10),
+		text("Mettä", 10),
+		text("Kuiva", 10),
+		text("Ylinen", 10),
+		text("Ikan", 10),
+		text("Ala", 10),
+		text("Yrtti", 10),
+		text("Äijä", 10),
+		text("Ala", 10),
+		text("Liika", 10),
+		text("Kääntö", 10),
+		text("Mänty", 10),
+		text("Ranta", 10),
+		text("Vehä", 10),
+		text("Mosko", 10),
+		text("Keräs", 10),
+	 	
+	}
+}
+
+town_names(two) {
+	{
+	 	text("järvi", 1),
+	 	text("vaara", 1),
+		text("kangas", 1),
+	 	text("vinsa", 1),
+		text("erkki", 1),
+		text("pieti", 1),
+		text("koski", 1),
+		text("joki", 1),
+		text("pää", 1),
+		text("ranta", 1),
+		text("rova", 1),
+		text("mukka", 1),
+		text("niva", 1),
+		text("lompolo", 1),
+		text("suando", 1),
+		text("niemi", 1),
+		text("saari", 1),
+		text("pää", 1),
+		text("jänkkä", 1),
+	}
+}
+
+town_names(fictional_names) {
+	styles : string(STR_TOWN_NAME_FICTION);
+	{
+	 	town_names(one,3)
+	}
+	{
+	 	town_names(two,1)
+	}
+}
+
+town_names(real_and_fiction_names) {
+	styles: string(STR_NAMES_FICTION_AND_REAL);
+	{
+		town_names(fictional_names, 1),
+		town_names(real_names, 3),
+	}
+}
